@@ -1,16 +1,7 @@
-INSERT INTO burgers (
-burger_name,
-devoured
-) VALUES
-(
-"Beef Double Cheese Burger",
-0
-),
-(
-"Patty Melt Burger",
-0
-),
-(
-"Mushroom & Swiss Double Cheese Burger",
-0
-);
+USE burgers_db;
+
+-- insert into table
+INSERT INTO burgers  (burger_name, devoured, dt) 
+VALUES ('Whataburger Jr', false, CURRENT_TIMESTAMP)
+, ('Patty Melt', false, CURRENT_TIMESTAMP)
+, ('Avacado Burger', false, CURRENT_TIMESTAMP);
